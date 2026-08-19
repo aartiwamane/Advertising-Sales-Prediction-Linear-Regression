@@ -63,6 +63,8 @@ def DataPreprocessing(df):
     print(df.corr())
     print(Border)
 
+    return df
+
 #Step 3 : Data Spliting
 #----------------------------------------------------
 #Function Name : SplitData
@@ -88,7 +90,7 @@ def SplitData(df):
     print("Dependent Variables : ")
     print(Y.head())
 
-    X_tarin,X_test, Y_train, Y_test = train_test_split(
+    X_train,X_test, Y_train, Y_test = train_test_split(
         X,
         Y,
         test_size=0.5,
@@ -96,10 +98,10 @@ def SplitData(df):
     )
 
     print(Border)
-    print("Training Data : ",X_tarin.shape)
+    print("Training Data : ",X_train.shape)
     print("Testing Data : ",X_test.shape)
 
-    return X_tarin,X_test,Y_train,Y_test
+    return X_train,X_test,Y_train,Y_test
 
 #Step 4 : Create and Train the Model
 #----------------------------------------------------
@@ -169,7 +171,7 @@ def EvaluateModel(model,X_test,Y_test):
 def main():
     df = LoadData("Advertising.csv")
 
-    DataPreprocessing(df)
+    df = DataPreprocessing(df)
 
     X_train,X_test,Y_train,Y_test = SplitData(df)
 

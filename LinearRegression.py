@@ -7,11 +7,11 @@ from sklearn.metrics import mean_squared_error,r2_score
 #Step 1 : Load the Dataset
 #----------------------------------------------------
 #Function Name : LoadData
-#Description :   Load the Data
-#Input :         Name of CSV File
-#Output :        Dataframe
-#Author :        Aarti Gorakshnath Wamane
-#Date :          18/08/2026
+#Description   : Load the Data
+#Input         : Name of CSV File
+#Output        : Dataframe
+#Author        : Aarti Gorakshnath Wamane
+#Date          : 18/08/2026
 #----------------------------------------------------
 Border = "-"*60
 def LoadData(filename):
@@ -29,11 +29,11 @@ def LoadData(filename):
 #Step 2 : Data Preprocessing
 #----------------------------------------------------
 #Function Name : DataPreprocessing
-#Description :   Perform Data Analysis
-#Input :         Dataframe
-#Output :        Updated Dataframe
-#Author :        Aarti Gorakshnath Wamane
-#Date :          18/08/2026
+#Description   : Perform Data Analysis
+#Input         : Dataframe
+#Output        : Updated Dataframe
+#Author        : Aarti Gorakshnath Wamane
+#Date          : 18/08/2026
 #----------------------------------------------------
 def DataPreprocessing(df):
     print(Border)
@@ -68,11 +68,11 @@ def DataPreprocessing(df):
 #Step 3 : Data Spliting
 #----------------------------------------------------
 #Function Name : SplitData
-#Description :   Perform Data Spliting activity
-#Input :         Dataframe
-#Output :        4 subset of training and testing data
-#Author :        Aarti Gorakshnath Wamane
-#Date :          18/08/2026
+#Description   : Perform Data Spliting activity
+#Input         : Dataframe
+#Output        : 4 subset of training and testing data
+#Author        : Aarti Gorakshnath Wamane
+#Date          : 18/08/2026
 #----------------------------------------------------
 def SplitData(df):
     print(Border)
@@ -106,11 +106,11 @@ def SplitData(df):
 #Step 4 : Create and Train the Model
 #----------------------------------------------------
 #Function Name : TrainModel
-#Description :   Perform Model Creation Training activity
-#Input :         Training Features and Labels
-#Output :        Trained Model
-#Author :        Aarti Gorakshnath Wamane
-#Date :          18/08/2026
+#Description   : Perform Model Creation Training activity
+#Input         : Training Features and Labels
+#Output        : Trained Model
+#Author        : Aarti Gorakshnath Wamane
+#Date          : 18/08/2026
 #---------------------------------------------------
 def TrainModel(X_train, Y_train):
     print(Border)
@@ -128,11 +128,11 @@ def TrainModel(X_train, Y_train):
 #Step 5 : Test and Evaluate the Model
 #----------------------------------------------------
 #Function Name : EvaluateModel
-#Description :   Perform Testing and Evaluation activity
-#Input :         Model, Testing Features and Labels
-#Output :        None
-#Author :        Aarti Gorakshnath Wamane
-#Date :          18/08/2026
+#Description   : Perform Testing and Evaluation activity
+#Input         : Model, Testing Features and Labels
+#Output        : None
+#Author        : Aarti Gorakshnath Wamane
+#Date          : 18/08/2026
 #---------------------------------------------------
 def EvaluateModel(model,X_test,Y_test):
 
@@ -161,12 +161,12 @@ def EvaluateModel(model,X_test,Y_test):
     print(Border)
 
 #--------------------------------------------------------
-#Function Name :main
-#Description :  Entry Point function
-#Input :        None
-#Output :       None
-#Author :       Aarti Gorakshnath Wamane
-#Date :         18/08/2026
+#Function Name : main
+#Description   : Entry Point function
+#Input         : None
+#Output        : None
+#Author        : Aarti Gorakshnath Wamane
+#Date          : 18/08/2026
 #--------------------------------------------------------
 def main():
     df = LoadData("Advertising.csv")
